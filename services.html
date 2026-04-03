@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>An.Z Home Furnishings - Premium Home Decor Services</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <meta name="description"
+        content="VinFur offers modern, durable furniture from Vietnam — stylish sofas, dining sets, storage, and decor at fair prices with fast delivery.">
+    <meta name="keywords"
+        content="VinFur, furniture, modern furniture, home decor, sofas, dining sets, storage solutions, affordable furniture, stylish interiors">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="icons/icomoon/style.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/favicon.svg">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.svg">
+    <style>
+         :root {
+            --primary-dark: #0a2c2d;
+            --primary-gold: #c19a6b;
+            --accent-cream: #f9f5f0;
+            --border-light: #e8e0d8;
+            --text-dark: #1e293b;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .contact-list i {
+            font-size: 16px;
+            color: #c19a6b;
+            /* premium gold color */
+            margin-top: 4px;
+            min-width: 20px;
+        }
+
+        .contact-list span,
+        .contact-list a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .contact-list a:hover {
+            color: #c19a6b;
+        }
+
+        .contact-list i {
+            color: #c19a6b;
+        }
+
+        .list-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        
+        /* Top Bar */
+        .top-bar {
+            background: var(--primary-dark);
+            color: #fff;
+            padding: 12px 24px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Header */
+      
+        .tf-container {
+            max-width: 1750px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .site-logo img {
+            max-height: 40px;
+            width: auto;
+        }
+
+        .main-menu ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 32px;
+        }
+
+        .main-menu ul li a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-dark);
+            transition: color 0.2s;
+            padding: 8px 0;
+            display: inline-block;
+        }
+
+        .main-menu ul li a:hover {
+            color: var(--primary-gold);
+        }
+
+        .btn-contact {
+            background: var(--primary-gold);
+            color: #fff !important;
+            padding: 12px 28px !important;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+        }
+
+        .btn-contact:hover {
+            background: #a67c4e;
+            transform: translateY(-2px);
+        }
+
+      
+        /* Services Section */
+        .services-wrapper {
+            padding: 70px 0;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .service-category {
+            margin-bottom: 70px;
+        }
+
+        .category-heading {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .category-heading h3 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .category-heading h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--primary-gold);
+        }
+
+        .category-heading p {
+            color: #666;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .grid-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-light);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.05);
+        }
+
+        .service-content {
+            padding: 24px;
+        }
+
+        .service-content h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+        }
+
+        .service-content p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .service-tag {
+            display: inline-block;
+            background: var(--accent-cream);
+            color: var(--primary-gold);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #1a4a4c 100%);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta-banner h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .cta-banner p {
+            color: rgba(255,255,255,0.85);
+            max-width: 600px;
+            margin: 0 auto 24px;
+        }
+
+        .btn-outline-gold {
+            background: transparent;
+            border: 2px solid var(--primary-gold);
+            color: var(--primary-gold);
+            padding: 12px 32px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-gold:hover {
+            background: var(--primary-gold);
+            color: #fff;
+        }
+
+        /* Footer */
+       
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: rgba(255,255,255,0.85);
+            font-size: 14px;
+        }
+
+        .contact-list i {
+            width: 20px;
+            color: var(--primary-gold);
+            font-size: 16px;
+        }
+
+        .contact-list a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            color: var(--primary-gold);
+        }
+
+       
+
+        /* Toolbar Bottom */
+        .tf-toolbar-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            display: none;
+            justify-content: space-around;
+            padding: 12px 20px;
+            box-shadow: 0 -2px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .tf-toolbar-bottom {
+                display: flex;
+            }
+            body {
+                padding-bottom: 70px;
+            }
+            .grid-services {
+                grid-template-columns: 1fr;
+            }
+            .header-inner {
+                flex-direction: column;
+            }
+            .main-menu ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .tf-page-title h2 {
+                font-size: 32px;
+            }
+        }
+
+        .toolbar-item {
+            text-align: center;
+        }
+
+        .toolbar-item a {
+            text-decoration: none;
+            color: #666;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+        }
+
+        .toolbar-item i {
+            font-size: 20px;
+        }
+
+        /* Utility Classes */
+        
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar style-default d-flex align-items-center justify-content-center">
+            <div>Home Furnishings provides premium home decor solutions
+
+            </div>
+        </div>
+
+        <!-- .header -->
+        <header class="header header-sticky">
+            <div class="tf-container w-1750">
+                <div class="header-inner">
+                    <a href="index.html" class="site-logo">
+ANZ
+HOME FURNISHINGS                    </a>
+                    <nav class="main-menu">
+                        <ul class="navigation box-nav-menu">
+
+                            <li class="text-menu menu-item">
+                                <a href="index.html" class="item-link">Home</a>
+                            </li>
+                            <li class="text-menu menu-item">
+                                <a href="services.html" class="item-link">Services</a>
+                            </li>
+
+                            <li class="text-menu menu-item">
+                                <a href="product.html" class="item-link">Product</a>
+                            </li>
+
+
+                            <li class="text-menu menu-item">
+                                <a href="gallery.html" class="item-link">Gallery</a>
+                            </li>
+
+                            <li class="text-menu menu-item">
+                                <a href="contact.html" class="item-link">Contact</a>
+                            </li>
+
+
+
+
+                        </ul>
+                    </nav>
+                    <div class="header-right d-flex align-items-center gap_20">
+                        <ul class="nav-icon-list">
+                            <li>
+                                <a href="contact.html"
+                                    class="btn btn-dark text-warning px-5 py-3 fs-5 fw-bold rounded-3 nav-icon-item link">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Page Title with Background Image -->
+    <div class="tf-page-title">
+            <h2 class="text-center text-uppercase title">Services</h2>
+            <ul class="breadcrumb-list">
+                <li><a href="index.html">Home</a></li>
+                <li>Services</li>
+            </ul>
+        </div>
+
+    <!-- MAIN SERVICES SECTION - IMAGE BOXES -->
+    <div class="services-wrapper">
+        <div class="container">
+            
+            <!-- Category 1: WINDOW TREATMENTS -->
+            <div class="service-category">
+                <div class="category-heading">
+                    <h3>Window Treatments</h3>
+                    <p>Elevate your interiors with refined light control & privacy solutions</p>
+                </div>
+                <div class="grid-services">
+                    <!-- Curtains - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/elegent-curtains.jpg" alt="Elegant Curtains" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Curtains'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Elegant Curtains</h4>
+                            <p>Elegant and stylish designs tailored precisely to your space. From sheer luxe to blackout opulence, our curated fabrics transform any room.</p>
+                            <span class="service-tag">Custom Made</span>
+                        </div>
+                    </div>
+                    <!-- Hospital Curtains & Tracks - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/hospital-curtain.webp" alt="Hospital Curtains" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Hospital+Curtains'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Hospital Curtains & Tracks</h4>
+                            <p>Hygienic, durable, and privacy-focused solutions for medical facilities. Anti-microbial fabrics and seamless track systems designed for clinical excellence.</p>
+                            <span class="service-tag">Healthcare Grade</span>
+                        </div>
+                    </div>
+                    <!-- Wallpapers - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/banner-2.jpg" alt="Luxury Wallpapers" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Wallpapers'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Luxury Wallpapers</h4>
+                            <p>A vast collection of textures and patterns for a stunning look. From minimalist linens to artistic murals, we redefine wall aesthetics.</p>
+                            <span class="service-tag">Premium Textures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: COMFORT & PROTECTION -->
+            <div class="service-category">
+                <div class="category-heading">
+                    <h3>Comfort & Protection</h3>
+                    <p>Restorative sleep & everyday luxury for your sanctuary</p>
+                </div>
+                <div class="grid-services">
+                    <!-- Mattresses - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/curtain(1).jpg" alt="Premium Mattresses" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Mattresses'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Premium Mattresses</h4>
+                            <p>High-quality comfort for restful sleep. Memory foam, hybrid, and orthopedic options engineered for spinal alignment and pressure relief.</p>
+                            <span class="service-tag">Orthopedic Support</span>
+                        </div>
+                    </div>
+                    <!-- Mattress Protectors - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/MattressProtectors.webp" alt="Mattress Protectors" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Mattress+Protectors'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Mattress Protectors</h4>
+                            <p>Extend the life of your mattress with added protection against spills, allergens, and dust mites — breathable and noiseless.</p>
+                            <span class="service-tag">Waterproof + Breathable</span>
+                        </div>
+                    </div>
+                    <!-- Headboard Panelling - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Headboard Panelling.jpg" alt="Headboard Panelling" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Headboard+Panelling'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Headboard Panelling</h4>
+                            <p>Stylish, padded panels for a luxurious and comfortable bedroom aesthetic. Upholstered in velvet, linen, or leather — bespoke designs.</p>
+                            <span class="service-tag">Custom Upholstery</span>
+                        </div>
+                    </div>
+                    <!-- Frosted Film - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Frosted Privacy Film.jpg" alt="Frosted Privacy Film" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Frosted+Film'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Frosted Privacy Film</h4>
+                            <p>Enhance privacy while maintaining natural light. Decorative and modern adhesive films for windows, glass partitions, and offices.</p>
+                            <span class="service-tag">Easy Install</span>
+                        </div>
+                    </div>
+                    <!-- Mosquito Nets - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Mosquito Nets.jpg" alt="Mosquito Nets" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Mosquito+Nets'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Mosquito Nets</h4>
+                            <p>Keep insects away while ensuring fresh air circulation. Retractable, magnetic, and pleated nets for windows and doors — sleek & durable.</p>
+                            <span class="service-tag">Insect Protection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: FLOORING SOLUTIONS -->
+            <div class="service-category">
+                <div class="category-heading">
+                    <h3>Flooring Solutions</h3>
+                    <p>Foundations of style — durable, timeless, and elegant floor coverings</p>
+                </div>
+                <div class="grid-services">
+                    <!-- Vinyl Flooring - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Vinyl Flooring.jpg" alt="Vinyl Flooring" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Vinyl+Flooring'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Vinyl Flooring</h4>
+                            <p>Durable and stylish for modern interiors. Waterproof, scratch-resistant, and available in wood/stone designs — perfect for high-traffic areas.</p>
+                            <span class="service-tag">Luxury Vinyl</span>
+                        </div>
+                    </div>
+                    <!-- Wooden Flooring - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Wooden Flooring.jpg" alt="Wooden Flooring" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Wooden+Flooring'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Wooden Flooring</h4>
+                            <p>Classic and timeless for a warm ambiance. Engineered hardwood and solid wood options that bring natural elegance to any space.</p>
+                            <span class="service-tag">Natural Finish</span>
+                        </div>
+                    </div>
+                    <!-- Carpets & Rugs - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Carpets & Rugs.jpg" alt="Carpets & Rugs" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Carpets+%26+Rugs'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Carpets & Rugs</h4>
+                            <p>Soft, plush, and elegant floor coverings. Hand-tufted, wool, and stain-resistant broadloom carpets tailored to your room dimensions.</p>
+                            <span class="service-tag">Custom Sizes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: FURNITURE CUSTOMIZATION -->
+            <div class="service-category">
+                <div class="category-heading">
+                    <h3>Furniture Customization</h3>
+                    <p>Revive, restore, and personalize your beloved pieces</p>
+                </div>
+                <div class="grid-services">
+                    <!-- Upholstery Work - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Upholstery Work on Sofas.webp" alt="Upholstery Work" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Upholstery+Work'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Upholstery Work on Sofas</h4>
+                            <p>Refresh, restore, and personalize your furniture with premium fabrics, leathers, and expert craftsmanship. Revive old sofas or redesign new ones.</p>
+                            <span class="service-tag">Reupholstery Experts</span>
+                        </div>
+                    </div>
+                    <!-- Bespoke Furniture - Image Box -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/img/Bespoke Furniture Design.jpg" alt="Bespoke Furniture" onerror="this.src='https://placehold.co/600x400/e8e0d8/c19a6b?text=Bespoke+Furniture'">
+                        </div>
+                        <div class="service-content">
+                            <h4>Bespoke Furniture Design</h4>
+                            <p>Tailor-made sofas, ottomans, and accent chairs to match your unique style and spatial needs. From concept to installation.</p>
+                            <span class="service-tag">Made to Order</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="cta-banner">
+                <i class="fa-regular fa-gem" style="font-size: 48px; color: var(--primary-gold); margin-bottom: 20px; display: inline-block;"></i>
+                <h3>Tailored solutions for every space</h3>
+                <p>Whether it's a residential makeover or a commercial project, our team delivers precision, aesthetic excellence, and lasting quality. From consultation to installation — we bring your vision to life.</p>
+                <a href="contact.html" class="btn-outline-gold">Request a Consultation →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+                             <!-- Footer -->
+                            <footer class="footer">
+                                <div class="footer-body">
+                                    <div class="tf-container">
+                                        <div class="row">
+
+                                            <!-- About -->
+                                            <div class="col-lg-3 col-md-6">
+                                                <div class="footer-about">
+                                                    <div class="h5 text-uppercase mb_24 footer-title text_white">About
+                                                    </div>
+                                                    <p class="text-body-default text_white mb_24">
+                                                        An.Z Home Furnishings provides premium home decor solutions
+                                                        including curtains,
+                                                        wallpapers, customized sofas, blinds, and flooring to enhance
+                                                        your living space.
+                                                    </p>
+                                                    <a href="services.html"
+                                                        class="hover-underline-link text_white text-body-default text-uppercase">
+                                                        Learn More
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Products + Links -->
+                                            <div class="col-lg-5 col-md-6">
+                                                <div class="wrap-footer-col-block">
+
+                                                    <!-- Products -->
+                                                    <div class="footer-col-block">
+                                                        <div class="h5 footer-title text_white mb_24">Products</div>
+                                                        <ul class="footer-menu-list d-grid gap_12">
+                                                            <li><a href="#" class="link-2 text_white">Curtains</a></li>
+                                                            <li><a href="#" class="link-2 text_white">Customized
+                                                                    Sofas</a></li>
+                                                            <li><a href="#" class="link-2 text_white">Wall Papers</a>
+                                                            </li>
+                                                            <li><a href="#" class="link-2 text_white">Blinds</a></li>
+                                                            <li><a href="#" class="link-2 text_white">Artificial
+                                                                    Grass</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- More Products -->
+                                                    <div class="footer-col-block">
+                                                        <div class="h5 footer-title text_white mb_24">More Products
+                                                        </div>
+                                                        <ul class="footer-menu-list d-grid gap_12">
+                                                            <li><a href="#" class="link-2 text_white">Mattress</a></li>
+                                                            <li><a href="#" class="link-2 text_white">Vinyl Flooring</a>
+                                                            </li>
+                                                            <li><a href="#" class="link-2 text_white">Wooden
+                                                                    Flooring</a></li>
+                                                            <li><a href="#" class="link-2 text_white">Carpets</a></li>
+                                                            <li><a href="#" class="link-2 text_white">Mosquito Nets</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Contact + Newsletter -->
+                                            <div class="col-lg-4">
+                                                <div class="footer-newsletter">
+
+                                                    <div class="footer-title text_white mb_28">
+                                                        <div class="h5 text-uppercase mb_16 text_white">Contact Us</div>
+
+                                                        <ul class="contact-list">
+                                                            <li>
+                                                                <i class="fas fa-map-marker-alt"></i>
+                                                                <span>610, M.K.N Road, Alandur, Chennai - 600016</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fas fa-phone-alt"></i>
+                                                                <a href="tel:7401130586">+91 7401130586</a>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fas fa-phone-alt"></i>
+                                                                <a href="tel:9710854799">+91 9710854799</a>
+                                                            </li>
+                                                            <li>
+                                                                <i class="fas fa-envelope"></i>
+                                                                <a
+                                                                    href="mailto:decoratore@gmail.com">decoratore@gmail.com</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bottom -->
+                                <div class="footer-bottom">
+                                    <div class="tf-container">
+                                        <div class="wrap-footer-bottom">
+
+                                            <p class="text_white">
+                                                Copyright © <span id="year"></span>
+                                                An.Z Home Furnishings. All Rights Reserved.
+                                                Developed By
+                                                <a href="https://chennaileads.com" target="_blank"
+                                                    rel="noopener noreferrer">
+                                                    Chennai Leads
+                                                </a>.
+                                            </p>
+
+                                            <!-- Payments -->
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+
+                        </div>
+                        <!-- /wrapper -->
+
+
+                        <!-- Toolbar -->
+                        <div class="tf-toolbar-bottom">
+                            <div class="toolbar-item">
+                                <a href="services.html">
+                                    <span class="toolbar-icon">
+                                        <i class="icon icon-storefront"></i>
+                                    </span>
+                                    <span class="toolbar-label">Services</span>
+                                </a>
+                            </div>
+                            <div class="toolbar-item">
+                                <a href="product.html" data-bs-toggle="modal">
+                                    <span class="toolbar-icon">
+                                        <i class="icon icon-magnifying-glass"></i>
+                                    </span>
+                                    <span class="toolbar-label">Product</span>
+                                </a>
+                            </div>
+                            <div class="toolbar-item">
+                                <a href="index.html">
+                                    <span class="toolbar-icon">
+                                        <i class="icon icon-user"></i>
+                                    </span>
+                                    <span class="toolbar-label">Home</span>
+                                </a>
+                            </div>
+                            <div class="toolbar-item">
+                                <a href="gallery.html">
+                                    <span class="toolbar-icon">
+                                        <i class="icon icon-heart"></i>
+                                    </span>
+                                    <span class="toolbar-label">Gallery</span>
+                                </a>
+                            </div>
+                            <div class="toolbar-item">
+                                <a href="contact.html">
+                                    <span class="toolbar-icon">
+                                        <i class="icon icon-bag"></i>
+                                    </span>
+                                    <span class="toolbar-label">Contact</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /Toolbar -->
+
+                        <!-- Mobile Menu -->
+                        <div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
+                            <span class="icon-close-popup" data-bs-dismiss="offcanvas">
+                                <i class="icon-close"></i>
+                            </span>
+                            <div class="canvas-header">
+                                <a href="index.html" class="site-logo">
+                                    ANZ
+HOME FURNISHINGS
+                                </a>
+
+                            </div>
+                            <div class="canvas-body">
+                                <div class="mb-content-top">
+                                    <ul class="nav-ul-mb" id="wrapper-menu-navigation"></ul>
+                                </div>
+
+
+                            </div>
+                            <!-- /Mobile Menu -->
+
+                            <!-- Compare -->
+
+                            <!-- /Demo -->
+
+
+
+
+
+                            <!-- Javascript -->
+                            <script src="js/jquery.min.js"></script>
+                            <script src="js/bootstrap.min.js"></script>
+                            <script src="js/bootstrap-select.min.js"></script>
+                            <script src="js/wow.min.js"></script>
+                            <script src="js/count-down.js"></script>
+                            <script src="js/swiper-bundle.min.js"></script>
+                            <script src="js/nouislider.min.js"></script>
+                            <script src="js/carousel.js"></script>
+                            <script src="js/parallaxie.js"></script>
+
+                            <script src="js/main.js"></script>
+                            <script src="js/shop.js"></script>
+
+                            <!-- /Javascript -->
+
+</body>
+
+
+<!-- Mirrored from vinfur.vercel.app/shop-grid-3-columns.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Apr 2026 12:20:51 GMT -->
+
+</html>
